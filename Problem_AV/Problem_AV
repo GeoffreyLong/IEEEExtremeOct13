@@ -1,0 +1,33 @@
+A caravan is mapping a path through the desert. In the desert there are known oases that the group plans to stop at to rest and get water. The caravan can travel no more than 5 days without water. Your goal is to find the shortest path through the desert and indicate how many days it will take to traverse that path.
+
+
+In this problem the desert is represented by an NxM rectangular grid of squares. Traversing a grid horizontally or vertically costs 1 day. Traversing the grid diagonally costs 1.5 days. There are 4 types of squares in the grid, desert (D), starting point (S), oasis (+), and ending point (E).
+
+
+Input: (Straight path with two oases)
+The first line of input is the number of rows and number of columns in the grid. This is followed by one line for each row in the grid. Each row line contains a single character for each square in that row.
+
+
+Output:
+Number of days with one decimal place. 
+If there is no way to do it, the output should print
+
+IMPOSSIBLE
+
+Sample Input:
+
+6 12
+DDDDDDDDDDDD
+DSDDDDDDDDDD
+DDDD+DDDDDDD
+DDDDDDD+DDDD
+DDDDDDDDDDED
+DDDDDDDDDDDD
+Sample Output:
+
+10.5  
+Hint
+
+The path through the desert in this example starts from S at [1, 1] and proceeds 3.5 days to the oasis at [4, 2]. The next oasis in the path is another 3.5 days to [7, 3]. The final leg of the path is 3.5 days to the end at [10, 4]. The total travel time is 10.5 days of travel.
+
+Problem Author: IEEE
