@@ -1,0 +1,67 @@
+People in the city of Herat hold the record of “maximum number of Ice cream consumption” on any day of the year. There is a popular Brand called Ice-Xtreme which supplies most of the Ice cream in the city. The company takes the help of the City Maps and the Traffic Department to supply the product to various vendors in the city as per their requirement. Nevertheless, every day few of the roads are closed for better traffic management or due to repair work etc. Daily Bulletins are available for checking the availability of open roads.
+
+
+The City has a very good architecture and it is divided into non-overlapping areas called blocks. Blocks are of arbitrary shapes. The Distribution is done through a Warehouse in every such block. Whenever the manager of the warehouse gets a phone call for delivery of the Ice Cream, he sends out his van to fulfil the order. Your program should output the shortest route (Which touches minimum number of turnings) from the Warehouse to the ice cream vendor. Obviously, it should not include any of the roads which are not usable on that day.
+
+as_image1
+
+Source: Microsoft© Clipart)
+
+Task
+Each block in the city may have a different layout. All the road turnings in each block are identified by a single alphabet letter ranging between F to Z. There is no specific order or rule about the way the road turnings are named with the alphabet.
+
+In each block the warehouse is always at F.
+
+Your task is to write a program that outputs every possible route for the van to supply the Ice Cream to the vendor, the total number of possible routes and the optimal route that should be taken according to the provided open roads and vendor location.
+
+
+Input
+The program should receive the input from the standard input stream. The first line of the input will be an alphabet letter (between F and Z) representing the road corner that is located nearest to the vendor who has requested the ice cream supplies.
+
+
+Then N lines will follow comprised of pair of alphabet letters (between F and Z) separated by a space representing the roads that are currently open and thus may be used by the van to deliver the supplies. For example the pair L P shows that the road between Road Corner L and Road Corner P is open and there is no other corner between L and P. Likewise, there can be many such pairs (each in its own line) for all open roads that may be followed. The input will end with the pair A A.
+
+
+Output
+The output should report to the standard output stream the total number of possible routes. Apparently, the reported tours should not contain the same road visited twice which will mean a cycle. The last line of the output it should print the shortest route. In case there are more than one as equally as optimal routes, the tie should be resolved by printing the route which if considered as a string, comes first in the (incremental - from A to Z) alphabetical order. If you think there is no such route available on that day due to closure of many roads then you should print No Route Available from F to {the vendor}.
+
+
+Note 1: There is a newline character at the end of the last line of the output.
+
+
+Note 2: There is a space character after the “:” character of the output lines.
+
+
+Sample Input 1:
+
+K
+F G
+F H
+H I
+H J
+I K
+J K
+G H
+G I
+A A
+Sample Output 1:
+
+Total Routes: 7
+Shortest Route Length: 4
+Shortest Route after Sorting of Routes of length 4: F G I K
+
+
+Sample Input 2:
+
+Z
+F M
+S T
+U V
+W X
+Y Z
+J K
+N O
+A A
+Sample Output 2:
+
+No Route Available from F to Z
