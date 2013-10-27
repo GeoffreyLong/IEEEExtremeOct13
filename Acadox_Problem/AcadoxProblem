@@ -1,0 +1,41 @@
+Acadox vision is to provide innovative and modern Learning Management technologies that empowers the faculty and students to engage and collaborate in a simple and efficient manner.
+One of the professor, who loves Acadox so much, posted on his page as a teaser problem for his students to prepare for their programming exam. The problem posted was as follows:
+Develop program that emulates a simple hexadecimal calculator that uses postfix notation. Perform the operations of addition, subtraction, logical and, logical or, logical not, and logical exclusive or.
+ap_image2
+
+Description
+Since Acadox is social environment for learning. The professor posted the following description on his page: The programmer’s calculator accepts a string of hexadecimal digits and operators in reverse Polish (postfix) notation then produces the result. Input digits represent 16 bit unsigned binary bit strings.
+
+Input
+The program must accept a sequence of operators and hexadecimal digits following the postfix form, as follows.
+
+Digits: Leading zeros are optional, alphas are not case sensitive: {[0-9 | A-F | a-f]}1-4
+
+Operators : ap_image1
+
+
+Each input item is delimited by a white space. An input stream is terminated with a new-line. No more than 20 items are accepted.
+
+Output
+The program must display the result of evaluating the entire postfix expression as single hexadecimal string, with leading zeros and upper case letters. If any input is invalid, the string “ERROR” is displayed.
+
+
+All operations are bitwise – there is no representation of negative quantities. An overflow: x + y > FFFF results in FFFF. An underflow, x – y < 0000, results in 0000.
+
+
+Sample Input 1:
+1 1 +
+Sample Output 1:
+0002
+
+Sample Input 2:
+F 1 -
+Sample Output 2:
+000E
+
+Sample Input 3:
+F - 1
+Sample Output 3:
+ERROR
+
+Problem Author: IEEE
