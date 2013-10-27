@@ -1,0 +1,41 @@
+An active member of the IEEE University Partnership Program has a huge collection of model sized cars. Each car is painted in one color. He has them placed one next to the other in a line.
+
+
+His friends are coming over tonight and he wants to show off his collection. He decided to remove some cars (zero or more) from the line, so that the rest of the cars create a palindrome with their colors.
+
+
+Write a program that will calculate all possible ways our friend can create a palindrome.
+
+
+Input Data
+The first line contains a number N (where 1 ? ? ? 20.000) which represents the number of cars in Vangelis’s collection. The second line contains N characters. Each character is the color of a car in the collection as they appear in the line.
+
+
+Output Data
+The output is composed of one line. That line contains exactly one integer number, the maximum number of ways Vangelis can create a palindrome by removing (zero or more) cars from the line. Since this number can be really big, present the result of the modulo of the division of this number with the number 12.345.678.
+
+
+Sample Input 1:
+
+4
+abcc
+Sample Output 1:
+
+5
+
+Sample Input 2
+
+4
+dcec
+Sample Output 2:
+
+6
+
+Sample Input 3:
+
+20
+XXXXXXXXXXXXXXXXXXXX
+Sample Output 3:
+
+1048575
+Problem Author: IEEE
