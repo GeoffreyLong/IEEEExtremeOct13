@@ -1,0 +1,39 @@
+Vangelis the bear was asked to measure the total usage of a weird tree-like directed network. He observed that the network is composed of two trees, that share the same root. On the first tree all edges point towards the root and on the second tree all edges point away from the root.
+
+AK-Image1
+
+
+All data enter the network from a vertice on the left and exit the netwok from a vertice on the right. Vangelis realised that if he attaches his measuring tool to any of the vertices on the bottleneck, he will get the total usage.
+
+
+Write a program that finds all vertices where Vangelis can install his measuring tool and get a full view of the network usage.
+
+
+Input Data
+
+The first line contains a number N (where 2 ? ? ? 200.000) which represents the number of vertices that the network is composed of. The next N-1 lines contain two natural numbers A and B separated by an empty character. Each couple represents a directional edge from vertice A to vertice B. The value of all numbers is bigger than 0 and less or equal to N.
+
+
+Output Data
+
+The output is composed of as many lines as the amount of vertices on the bottleneck. Each line contains exactly one natural number, the number of a vertice. Results should be given in an increasing order.
+
+
+Sample Input 1:
+
+10
+1  5
+2  5
+3  5
+4  6
+5  7
+6  7
+7  8
+8  9
+8  10
+
+Sample Output 1:
+
+7
+8
+Problem Author: IEEE
