@@ -1,0 +1,42 @@
+A simple substitution cipher is a method of encrypting text by replacing each character with another character in the alphabet. Given a dictionary of words and an encrypted block of text, crack the cipher and print out the decrypted text. The encrypted text may use words that do not show up in the dictionary. All characters used in the encrypted text will appear at least once in a word that is in the dictionary.
+
+
+Input:
+The first line of the input is the number of words in the provided dictionary. Each word in the dictionary is on its own line following the number of words. After the dictionary a blank line will be inserted. All text following the blank line will be the encrypted text.
+
+
+Output:
+The decrypted sentence all in CAPS
+
+
+<h3>Example 1: All words in dictionary</h3>
+
+
+Sample Input:
+
+2  
+case  
+simple  
+  
+AJWHPU GXAU  
+Sample Output1:
+
+SIMPLE CASE  
+
+<h3>Example 2: Not all words in dictionary</h3> In the example below, the last word ABE is a proper name that is not found in the dictionary. However, in the encoded text all characters used in the name Abe (‘a’,’b’,’e’) are encoded in other known words in the dictionary.
+
+
+Sample Input 2:
+
+5  
+ball  
+belongs  
+red  
+the  
+to  
+  
+SJI XIL TEMM TIMUBPK SU ETI  
+Sample Output 2:
+
+THE RED BALL BELONGS TO ABE
+Problem Author: IEEE
