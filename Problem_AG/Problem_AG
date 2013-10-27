@@ -1,0 +1,27 @@
+Dumpstein, a nice robot was trapped on one side of a square board of NxN size (3 ? N ? 5,000; rows and columns indexed from 1). To open the door on the other side, Dumpstein have to solve a puzzle. Each test case, mission starts with moving the tile from cell (1, 1) to cell (N, N) using only the directions “right” or “down”. Dumpstein is required to find the number of different ways for the tile to reach using exactly K turns (we term a “turn” as a “down” move followed immediately by a “right” move or a “right” followed immediately by a “down”; 0 < K < 2N-2). Dumpstein can pass thorugh the door, if he answers all test cases and when the input is N = K = 0.
+
+
+Input
+There are many test cases ( < 5,000 )
+N K, positive integers
+The input seizes with N = K = 0
+
+Output
+
+For each test case, output on a line an integer which is the result calculated. The number of ways may be very large, so compute the solution modulo 1,000,000,007.
+
+
+Sample Input 1:
+
+4 2
+4 3
+5 3
+0 0
+Sample Output:
+
+4
+8
+18
+Explanation for the first test case 4 2: 4 ways are RRDDDR, RDDDRR, DRRRDD, DDRRRD (2 turns on each of them; ‘R’ or ‘D’ represents a right or down move respectively).
+
+Problem Author: IEEE
